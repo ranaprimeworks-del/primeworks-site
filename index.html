@@ -3,51 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Primeworks Chicago</title>
+<title>Primeworks Services LLC</title>
+
 <style>
-body {font-family: Arial; margin:0; background:#f5f5f5;}
-header {background:#000; color:#fff; padding:20px;}
-.container {padding:40px; max-width:1100px; margin:auto;}
-h1 {font-size:42px;}
-.btn {display:inline-block; background:#000; color:#fff; padding:12px 20px; text-decoration:none; margin-top:20px;}
-.section {margin-top:60px;}
-.card {background:#fff; padding:20px; margin:10px 0; border-radius:10px;}
+body {margin:0;font-family:Arial;color:#222;}
+
+nav {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#000;
+color:#fff;
+}
+
+nav a {
+color:#fff;
+margin:0 15px;
+text-decoration:none;
+}
+
+.hero {
+background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+text-align:center;
+}
+
+.hero h1 {font-size:50px;}
+
+.btn {
+background:#fff;
+color:#000;
+padding:12px 20px;
+margin-top:20px;
+display:inline-block;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section {
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.services {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card {
+background:#f5f5f5;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover {
+background:#000;
+color:#fff;
+cursor:pointer;
+}
+
+.gallery {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:10px;
+}
+
+.gallery img {
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact input, .contact textarea {
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+footer {
+background:#000;
+color:#fff;
+text-align:center;
+padding:30px;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>PRIMEWORKS SERVICES LLC</h2>
-<p>General Contractor | Chicagoland</p>
-</header>
+<nav>
+<div><b>PRIMEWORKS</b></div>
+<div>
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<div class="container">
+<div class="hero">
+<div>
+<h1>Luxury Construction & Remodeling</h1>
+<p>Serving Chicago & Suburbs</p>
+<a class="btn" href="tel:7086779222">Call Now</a>
+</div>
+</div>
 
-<h1>Contractor-grade work with a luxury finish.</h1>
-<p>General contracting, remodeling, mitigation, janitorial, and full property services across Chicago and surrounding suburbs.</p>
-
-<a class="btn" href="tel:7086779222">Call Now (708) 677-9222</a>
-
-<div class="section">
-<h2>Services</h2>
-
+<div id="services" class="section">
+<h2>Our Services</h2>
+<div class="services">
 <div class="card">General Contracting</div>
 <div class="card">Remodeling & Renovation</div>
 <div class="card">Mitigation & Cleanup</div>
 <div class="card">Commercial Janitorial</div>
 <div class="card">Repairs & Maintenance</div>
-
+</div>
 </div>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: Rana.primeworks@gmail.com</p>
-<p>Phone: (708) 677-9222</p>
-<p>Serving Chicago & surrounding suburbs</p>
+<div id="work" class="section">
+<h2>Recent Projects</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+</div>
 </div>
 
+<div id="contact" class="section">
+<h2>Request a Quote</h2>
+<div class="contact">
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+<input placeholder="Email">
+<textarea placeholder="Tell us about your project"></textarea>
+<a class="btn" href="tel:7086779222">Call Instead</a>
 </div>
+</div>
+
+<footer>
+<p>Primeworks Services LLC</p>
+<p>Chicago & Surrounding Suburbs</p>
+<p>(708) 677-9222</p>
+</footer>
 
 </body>
 </html>
